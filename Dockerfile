@@ -1,7 +1,6 @@
-FROM ubuntu
-
-RUN apt update
-RUN apt upgrade -y
-RUN apt install -y nodejs
-RUN apt clean
-RUN rm -rf /var/lib/apt/lists/\*
+FROM centos:7
+RUN yum install httpd -y
+RUN systemctl enable httpd
+COPY index.html /var/www/html
+EXPOSE 80
+CMD ["httpd", "-D","FOREGROUND"]
