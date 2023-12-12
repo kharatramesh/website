@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM registry.redhat.io/ubuntu:latest
 MAINTAINER "chetan@gmail.com"
 LABEL "app"="php application"
 RUN apt update -y
