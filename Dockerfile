@@ -4,4 +4,4 @@ RUN apt update -y
 RUN apt install apache2 -y
 
 COPY index.html /var/www/html
-CMD ["httpd","-D","FOREGROUND"]
+CMD ["apache2ctl","-D","FOREGROUND"]
