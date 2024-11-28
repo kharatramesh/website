@@ -1,4 +1,4 @@
-FROM Ubuntu
+FROM ubuntu
 LABEL "app"="php application"
 RUN apt update -y
 RUN apt install apache2 -y
