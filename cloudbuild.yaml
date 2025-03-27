@@ -1,6 +1,0 @@
-steps:
-- name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/fractal3/fractal-artifactory-repo/fractal-image1:tag1', '.' ]
-images:
-- 'us-central1-docker.pkg.dev/fractal3/fractal-artifactory-repo/fractal-image1:tag1'
-# [END cloudbuild_quickstart_build]
